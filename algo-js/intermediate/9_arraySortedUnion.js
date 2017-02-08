@@ -36,7 +36,7 @@ function uniteUnique() {
 
 // basic solution O(n*m)
 function uniteUnique() {
-    var finalArray = [];
+    var result = [];
 
     for (var i = 0; i < arguments.length; i++) {
         var argArr = arguments[i];
@@ -44,13 +44,13 @@ function uniteUnique() {
         for (var j = 0; j < argArr.length; j++) {
             var indexValue = argArr[j];
 
-            if (finalArray.indexOf(indexValue) < 0) {
-                finalArray.push(indexValue);
+            if (result.indexOf(indexValue) < 0) {
+                result.push(indexValue);
             }
         }
     }
 
-    return finalArray;
+    return result;
 }
 
 

@@ -20,12 +20,12 @@ function pairElement(str) {
 
 // solution with plain js
 function pairElement(str) {
-    strArr = str.split('');
+    var items = str.split('');
 
     for (var i = 0; i < strArr.length; i++) {
-        strArr[i] = [strArr[i], pairs[strArr[i]]];
+        items[i] = [strArr[i], pairs[strArr[i]]];
     }
-    return strArr;
+    return items;
 }
 
 pairElement("GCG");

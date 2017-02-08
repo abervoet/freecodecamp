@@ -9,13 +9,11 @@ function binaryAgent(str) {
     return String.fromCharCode(...str.split(" ").map(function (char) { return parseInt(char, 2); }));
 }
 
-// solution with map
+// one line solution with map
 function binaryAgent(str) {
-    var binArr = [];
-    str.split(' ').map(function (bVal) {
-        binString.push(String.fromCharCode(parseInt(bVal, 2)));
-    });
-    return binArr.join('');
+    return str.split(' ').map(function (bVal) {
+        return String.fromCharCode(parseInt(bVal, 2));
+    }).join('');
 }
 
 // solution with for loop

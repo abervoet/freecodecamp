@@ -4,13 +4,18 @@ Return the length of the longest word in the provided sentence.
 
 */
 
+// todo: solution with map and max bind ?
+function findLongestWord(s) {
+  //  return s.split(' ').reduce(Function.apply.bind(Math.max, null));
+}
+
+
 // solution with reduce
 function findLongestWord(s) {
     return s.split(' ').reduce(function (max, word) {
         return Math.max(max, word.length)
     }, 0);
 }
-
 
 // basic solution
 function findLongestWord(str) {

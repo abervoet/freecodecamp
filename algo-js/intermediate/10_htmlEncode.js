@@ -1,10 +1,7 @@
 /*      https://www.freecodecamp.com/challenges/convert-html-entities
 Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.
 */
-
-// solution with map
-function convertHTML(str) {
-    htmlCharMap = {
+var htmlCharMap = {
         '&': '&amp;',
         '<': '&lt;',
         '>': '&gt;',
@@ -12,6 +9,8 @@ function convertHTML(str) {
         '\'': "&apos;"
     };
 
+// solution with map
+function convertHTML(str) {  
     return str.split('').map(function (char) {
         return htmlCharMap[char] || char;
     }).join('');

@@ -8,7 +8,7 @@ var getItemIndex = function (arr, name) {
     for (var i = 0; i < arr.length; i++) {
         if (arr[i][1] === name) return i;
     }
-}
+};
 
 function updateInventory(arr1, arr2) {
     for (var i = 0; i < arr2.length; i++) {

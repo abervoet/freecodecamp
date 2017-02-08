@@ -14,7 +14,7 @@
 // solution with regExp and replace
 function palindrome(str) {
   var cleanStr = str.trim().toLowerCase().replace(/\W|_/g, '');  // removes non-alphabetical (\W) or underscore (|_)
-  return cleanStr == cleanStr.split('').reverse().join('');
+  return cleanStr === cleanStr.split('').reverse().join('');
 }
 
 //todo: solution with plain js

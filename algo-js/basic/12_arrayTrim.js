@@ -12,7 +12,7 @@ function bouncer(arr) {
 // basic solution with filter
 function bouncer(arr) {
    return arr.filter(function(val) {
-        return new Boolean(val) == true;
+        return Boolean(val) === true;
    });
 }
 

@@ -18,11 +18,9 @@ https://www.mathsisfun.com/least-common-multiple.html
 function smallestCommons(arr) {
     var min = Math.min(...arr);
     var max = Math.max(...arr);
-    //    var numsArray = range(min, max, 1);
     var candidate = max;
 
     var smallestCommon = function (low, high) {
-        // inner function to use 'high' variable
         function scm(l, h) {
             if (h % l === 0) {
                 return h;
