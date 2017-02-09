@@ -45,7 +45,7 @@ function pairwise(arr, arg) {
     return res;
 }
 
-// bruteforce solution O(n*n!) -> iterate on each element (arr[i...n]) then on rest of the list (arr[1+1...n]) to find pair
+// bruteforce solution O(n!) very bad -> iterate on each element (arr[i...n]) then on rest of the list (arr[1+1...n]) to find pair
 function pairwise(arr, arg) {
     var res = 0;
 
